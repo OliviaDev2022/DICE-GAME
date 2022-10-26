@@ -1,0 +1,287 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(240, 200, 200, 0.76);
+}
+
+h1 {
+  font-family: 'Eczar', serif;
+  font-size: 25px;
+  font-weight:bolder;
+  text-align: center;
+  padding-top: 7%;
+  color: rgb(13, 13, 227);
+  text-shadow: 2px 2px 3px rgb(202, 80, 80);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.wrapper {
+  padding-top: 0px;
+  width: 400px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(50, 9, 173, 0.71);
+  overflow: visible;
+  box-shadow: inset 0 0 1em rgb(172, 172, 87), 0 0 1em rgba(209, 255, 239, 0.358);
+}
+
+.player-0-panel, .player-1-panel {
+  width: 50%;
+  float: left;
+  height: 600px;
+  padding: 75px;
+}
+
+.player-name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.player-score {
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(252, 252, 252);
+  margin-bottom: 130px;
+}
+
+.active {
+  background-color: #6b52fc; 
+}
+ 
+.active, .player-name { 
+  font-weight: 200; 
+  font-size: 18px;
+  text-align: center;
+}
+
+.active .player-name::after {
+  content: "\2022";
+  position: absolute;
+  color: #EB4D4D;
+  top: -7px;
+  right: 10px;
+}
+
+.player-current-box {
+  background-color: rgba(240, 200, 200, 0.76);
+  width: 40%;
+  margin-left: -26px;
+  padding-right: 100px;
+  padding-bottom: 16px;
+}
+  
+.player-current-label {
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  padding-top: 8px;
+  margin-left: 15px;
+}
+
+.player-current-score {
+  font-size: 20px;
+  color: rgb(252, 252, 252);
+  padding-top: 5px;
+  margin-left: 40px;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 220px;
+  transform: translateX(-50%);
+  height: 80px;  
+}
+
+button {
+  position: fixed;
+  width: 200px;
+  left: 50%;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  transform: translateX(-50%);
+}
+
+
+button:focus {
+  outline: none;
+}
+  
+.btn-new { top: 55px;}
+.btn-roll { top: 430px;}
+.btn-hold { top: 460px;}
+.btn-edit { top : 500px;}
+
+button:hover { font-weight: 600; }
+
+
+
+
+/***
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+ button : 
+ cursor: pointer;
+ transition: background-color 0.3s, color 0.3s;
+
+
+position: fixed; H1
+
+*/
+
+@media screen and (min-width: 350px) and (orientation: portrait) {
+ .wrapper {
+  top: 50%;
+}
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  .wrapper {
+   top: 55%;
+ }
+}
+
+@media screen and (min-width: 428px) and (orientation: portrait) {
+  .wrapper {
+  top: 50%;
+ }
+
+  h1 {
+  font-size: 30px;
+  padding-top: 12%;
+ }
+
+ .player-name {
+  margin-left: -20px;
+  margin-top: 36px;
+ }
+ 
+ #name-1 {
+  margin-left: -17px;
+ }
+
+ .player-score {
+  margin-bottom: 162px;
+  
+ }
+}
+
+@media screen and (min-width: 540px) and (orientation: portrait) {
+ .wrapper {
+ top: 50%;
+ width: 500px;
+ }
+
+ h1 {
+ font-size: 40px;
+ padding-top: 15%;
+ }
+
+ .active, .player-name { 
+ font-weight: 300; 
+ font-size: 22px;
+ text-align: center;
+ }
+
+ .player-name {
+ margin-top: 35px;
+ }
+
+ button {
+ font-size: 16px;
+ }
+
+ .player-current-box {
+ margin-left: 8px;
+ }
+
+ .player-score {
+ font-size: 22px;
+ font-weight: 300;
+ margin-bottom: 160px;
+ margin-left: 8px;
+ }
+
+ #score-1 {
+ margin-left: 35px;
+ }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+ h1 {
+ font-size: 50px;
+ padding-top: 18%;
+ }
+
+ .wrapper {
+ top: 55%;
+ width: 700px;
+ }
+
+ .active, .player-name { 
+ font-size: 25px;
+ }
+
+ .btn-roll, .btn-edit, .btn-hold, .btn-new { 
+ font-size: 17px;
+ }
+ 
+ .player-current-box {
+ margin-left: 45px;
+ }
+
+ .player-score {
+ font-size: 25px;
+ margin-left: -20px;
+ margin-bottom: 150px;
+ }
+ 
+ #score-1 {
+ margin-left: 75px;
+ }
+
+ .player-current-label {
+ font-size: 20px;
+ margin-left: 15px;
+ }
+  
+ .player-current-score {
+ font-size: 20px; 
+ margin-left: 50px;
+ }
+
+ .player-current-box {
+ width: 65%;
+ margin-left: 28px;
+ }
+}
+
+@media screen and (min-width: 992px) and (orientation: portrait) {
+
+
+
+
+
+}
