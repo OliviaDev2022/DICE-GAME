@@ -97,7 +97,7 @@ h1 {
   left: 50%;
   top: 220px;
   transform: translateX(-50%);
-  height: 80px;  
+  height: 58px;  
 }
 
 button {
@@ -158,13 +158,10 @@ button:hover { font-weight: 600; }
   margin-bottom: 20px;
  }
 
- .dice {
-  height: 58px;
- }
-
  .active, .player-name { 
   font-size: 16px;
  }
+
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait) {
@@ -178,6 +175,10 @@ button:hover { font-weight: 600; }
   .wrapper {
   top: 50%;
   width: 410px;
+ }
+
+ .dice {
+  height: 62px;
  }
 
   h1 {
@@ -237,6 +238,10 @@ button:hover { font-weight: 600; }
 
  #score-1 {
  margin-left: 35px;
+ }
+
+ .dice {
+  height: 70px;
  }
 }
 
@@ -299,6 +304,10 @@ button:hover { font-weight: 600; }
  .close {
   margin-left: 28%;
  }
+
+ .dice {
+  height: 80px;
+ }
 }
 
 @media screen and (min-width: 900px) and (orientation: portrait) {
@@ -336,6 +345,10 @@ button:hover { font-weight: 600; }
   margin-left: 75px;
   width: 45%;
   }
+
+  .dice {
+  height: 85px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -343,7 +356,11 @@ button:hover { font-weight: 600; }
   font-size: 55px;
   padding-top: 7%;
   }
-   
+  
+  .dice {
+  height: 90px;
+  }
+
   .wrapper {
   top: 90%;
   width: 900px;
@@ -408,6 +425,10 @@ button:hover { font-weight: 600; }
   padding-top: 10%;
   }
 
+  .dice {
+  height: 95px;
+  }
+  
   .wrapper {
   top: 70%;
   width: 1000px;
