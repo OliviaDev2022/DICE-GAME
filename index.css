@@ -38,7 +38,7 @@ h1 {
 }
 
 .player-name {
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -58,6 +58,7 @@ h1 {
   font-weight: 200; 
   font-size: 18px;
   text-align: center;
+  color: black;
 }
 
 .active .player-name::after {
@@ -149,8 +150,20 @@ button:hover { font-weight: 600; }
 
 @media screen and (min-width: 350px) and (orientation: portrait) {
  .wrapper {
-  top: 50%;
+  top: 60%;
   width: 360px;
+ }
+
+ h1 {
+  margin-bottom: 20px;
+ }
+
+ .dice {
+  height: 58px;
+ }
+
+ .active, .player-name { 
+  font-size: 16px;
  }
 }
 
